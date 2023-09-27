@@ -119,10 +119,16 @@ const App = () => {
                                         exact
                                         strict
                                         component={Safes}
-                                        path={'/'}
+                                        path={'/safes'}
+                                    />
+                                    <Route
+                                        exact
+                                        strict
+                                        component={Safes}
+                                        path={'/blocked-countries/safes'}
                                     />
 
-                                    <Redirect from="*" to="/" />
+                                    <Redirect from="*" to="/safes" />
                                 </Switch>
                             </Web3ReactManager>
                         </Suspense>
